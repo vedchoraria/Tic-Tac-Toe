@@ -35,6 +35,7 @@ function handleCellClick(e) {
     count++;
     checkResult();
     statusDisplay.textContent = `Player ${turn}'s Turn`;
+    checkResult();
 }
 
 function checkResult() {
@@ -61,6 +62,7 @@ function checkResult() {
         let winner = turn === "X" ? "O" : "X";
         win.innerText = `Player ${winner} won!`;
         win.classList.add("text-7xl", "font-bold", "text-center", "my-4");
+        statusDisplay.innerText ="!!!Game Over!!!"
         gameActive = false;
         return;
     }
