@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+
+  <link rel="stylesheet" href="./output.css" />
+
+  <!-- Google Font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Kablammo&family=Londrina+Sketch&display=swap" rel="stylesheet">
+  <!-- Apply Font -->
+  <style>
+    .akaya-kanadaka-regular {
+      font-family: 'Akaya Kanadaka', cursive;
+    }
+.londrina-sketch-regular {
+  font-family: "Londrina Sketch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kablammo {
+  font-family: "Kablammo", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 0;
+}
+.highlight{
+  background-color: yellow;
+  border: 2px solid orange;
+  
+}
+  </style>
+</head>
+<body class="min-h-screen bg-sky-100">
+ 
+  <div class="container mx-auto flex flex-col items-center justify-center min-h-screen py-8">
+     <div id ="Winner" class="londrina-sketch-regular text-9xl text-center">Welcome to</div>
+    <h1 class="akaya-kanadaka-regular text-6xl text-center text-purple-800 drop-shadow-md">
+      Tic-Tac-Toe
+    </h1>
+    
+    <h4 class="akaya-kanadaka-regular text-center text-slate-600 mt-2">With ❤️ by Ved</h4>
+    
+    <!-- Game Container -->
+    <div class="flex flex-col items-center mt-8">
+      <!--Game Status Display-->
+      <div id="Status" class="font-bold akaya-kanadaka-regular text-2xl text-purple-700 mb-4">Player X's Turn</div>
+      
+      <!--Grid-->
+      <div id="gameBoard" class="grid grid-cols-3 gap-2">
+        <div class="box w-24 h-24 bg-white border-2 border-purple-400 flex items-center justify-center text-4xl cursor-pointer rounded-2xl"></div>
+        <div class="box w-24 h-24 bg-white border-2 border-purple-400 flex items-center justify-center text-4xl cursor-pointer rounded-2xl"></div>
+        <div class="box w-24 h-24 bg-white border-2 border-purple-400 flex items-center justify-center text-4xl cursor-pointer rounded-2xl"></div>
+        <div class="box w-24 h-24 bg-white border-2 border-purple-400 flex items-center justify-center text-4xl cursor-pointer rounded-2xl"></div>
+        <div class="box w-24 h-24 bg-white border-2 border-purple-400 flex items-center justify-center text-4xl cursor-pointer rounded-2xl"></div>
+        <div class="box w-24 h-24 bg-white border-2 border-purple-400 flex items-center justify-center text-4xl cursor-pointer rounded-2xl"></div>
+        <div class="box w-24 h-24 bg-white border-2 border-purple-400 flex items-center justify-center text-4xl cursor-pointer rounded-2xl"></div>
+        <div class="box w-24 h-24 bg-white border-2 border-purple-400 flex items-center justify-center text-4xl cursor-pointer rounded-2xl"></div>
+        <div class="box w-24 h-24 bg-white border-2 border-purple-400 flex items-center justify-center text-4xl cursor-pointer rounded-2xl"></div>
+      </div>
+      
+      <!-- Reset Button -->
+      <button id="reset-btn" class="mt-6 px-4 py-2 bg-purple-500 hover:bg-purple-600 text-white rounded-lg transition-colors">
+        Reset Game
+      </button>
+    </div>
+  </div>
+  <script src = "script.js"></script>
+</body>
+</html>
